@@ -1,0 +1,4 @@
+[tools]
+"cargo:cargo-binstall" = "latest"
+"cargo:cargo-workspaces" = "latest"
+rust = "latest"
