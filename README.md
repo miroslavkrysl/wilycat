@@ -37,6 +37,15 @@ Message-oriented life organizer: **note-taking**, **calendar**, and **chat**, wi
   - Clean and intuitive UI
   - [Less is more](https://en.wikipedia.org/wiki/Less_is_more), [worse is better](https://en.wikipedia.org/wiki/Worse_is_better)
 
+## Architecture
+
+This outlines the architecture used for this project, viewed from multiple levels.
+
+### Code
+
+The code adheres the principles of [clean architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) while maintaining the Java/Spring-like component oriented design for services and their interfaces.
+This enables a decent level of complexity, modularity and testability.
+
 ## Technology Stack
 
 - Rust language for everything possible
