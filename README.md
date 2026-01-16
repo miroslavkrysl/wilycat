@@ -52,9 +52,9 @@ This enables a decent level of complexity, modularity and testability.
 - Dioxus for UI ([https://dioxuslabs.com](https://dioxuslabs.com))
 - Iroh for P2P networking ([https://www.iroh.computer](https://www.iroh.computer))
 - Automerge ([https://automerge.org/](https://automerge.org/)) for [CFRD structures](https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type)
-- redb ([https://github.com/cberner/redb](https://github.com/cberner/redb)) or ~~Turso ([https://github.com/tursodatabase/turso](https://github.com/tursodatabase/turso))~~ for local data storage
-  - redb is maybe too simple, lacking a lot of features by design, but it is propably absolutely sufficient
-  - Turso is an ambitious project with a ton of features trying to replace SQLite, but still does not feel to be production-ready at this time
+- ~~redb ([https://github.com/cberner/redb](https://github.com/cberner/redb))~~ or Turso ([https://github.com/tursodatabase/turso](https://github.com/tursodatabase/turso)) for local data storage
+  - redb is robust, but maybe too simple, lacking a lot of features by design
+  - Turso is an ambitious project with a ton of features trying to replace SQLite, but it does not feel to be production-ready at this time. However, it is good enough to be used in this project. Also, it supports encryption at rest.
 - Tantivy ([https://github.com/quickwit-oss/tantivy](https://github.com/quickwit-oss/tantivy)) or SeekStorm ([https://seekstorm.com](https://seekstorm.com)) for indexing and search - TBD
 
 ## Project Roadmap
@@ -73,7 +73,7 @@ This roadmap outlines the planned and completed features for **wilycat** life or
 In no particular order.
 
 #### Features, Plans & Ideas ####
-- Linking clients
+- Adding clients/devices
 - Synchronization of data between clients
 - Message tags with search
 - Search presets with views
