@@ -15,6 +15,10 @@ Message-oriented life organizer: **note-taking**, **calendar**, and **chat**, wi
   - The main domain concept is a message - called **Entry** - whether it is note, event or chat message
   - Every **Entry** is a part of a continuous stream of entries - called **Channel**
   - There is no other structure or hierarchy
+- _Powerful searching_
+  - Fulltext search
+  - Tag-based categorization by topics
+  - Searching presets
 - _Decentralized_
   - The data can live on multiple clients
   - There is no central server or authority
