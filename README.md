@@ -1,6 +1,6 @@
 # wilycat
 
-Message-oriented life organizer: **note-taking**, **calendar**, and **chat**, with an emphasis on effortless search and organization, security, decentralization, and collaboration.
+Note-oriented life organizer: **note-taking**, **calendar**, and **chat**, with an emphasis on effortless search and organization, security, decentralization, and collaboration.
 
 > [!CAUTION]
 > WIP - this project is in very early work-in-progress, see [project roadmap](#project-roadmap) for list of implemented and planned features. 
@@ -11,9 +11,9 @@ Message-oriented life organizer: **note-taking**, **calendar**, and **chat**, wi
   1. **Note-taking**
   2. **Calendar events/reminders**
   3. **Chat**
-- _Message-oriented_
-  - The main domain concept is a message - called **Entry** - whether it is note, event or chat message
-  - Every **Entry** is a part of a continuous stream of entries - called **Channel**
+- _Note-oriented_
+  - The main domain concept is a note - called **Note** - whether it is a note, event or chat message
+  - Every **Note** is a part of a continuous stream - called **Channel**
   - There is no other structure or hierarchy
 - _Powerful searching_
   - Fulltext search
