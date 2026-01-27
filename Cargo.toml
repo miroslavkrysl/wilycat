@@ -1,10 +1,9 @@
 [workspace]
 resolver = "3"
 members = [
-    "crates/domain",
-    "crates/app",
-    "crates/db",
-    "crates/linux-app",
+    "crates/core",
+    "crates/db-turso",
+    "crates/app-linux",
 ]
 
 [workspace.package]
@@ -17,6 +16,12 @@ rust-version = "1.91.0"
 version = "0.1.0"
 
 [workspace.dependencies]
+core = { path = "crates/core" }
+
 uuid = "1.19.0"
 serde = "1.0.228"
 time = "0.3.45"
+thiserror = "2.0.17"
+anyhow = "1.0.100"
+async-trait = "0.1.89"
+mockall = "0.14.0"

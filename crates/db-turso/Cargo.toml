@@ -1,5 +1,5 @@
 [package]
-name = "app"
+name = "db-turso"
 authors.workspace = true
 description.workspace = true
 edition.workspace = true

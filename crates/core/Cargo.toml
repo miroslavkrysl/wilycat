@@ -1,5 +1,5 @@
 [package]
-name = "domain"
+name = "core"
 authors.workspace = true
 description.workspace = true
 edition.workspace = true
@@ -9,6 +9,9 @@ rust-version.workspace = true
 version.workspace = true
 
 [dependencies]
-uuid = { workspace = true, features = ["serde", "v7"] }
-serde = { workspace = true, features = ["derive"] }
+async-trait = { workspace = true }
 time = { workspace = true, features = ["serde"] }
+uuid = { workspace = true, features = ["v7", "serde"] }
+thiserror = { workspace = true }
+anyhow = { workspace = true }
+serde = { workspace = true, features = ["derive"] }
