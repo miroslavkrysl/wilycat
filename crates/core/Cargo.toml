@@ -10,8 +10,14 @@ version.workspace = true
 
 [dependencies]
 async-trait = { workspace = true }
+futures = { workspace = true, features = [] }
 time = { workspace = true, features = ["serde"] }
 uuid = { workspace = true, features = ["v7", "serde"] }
 thiserror = { workspace = true }
 anyhow = { workspace = true }
 serde = { workspace = true, features = ["derive"] }
+tokio = { workspace = true, features = ["rt", "macros"] }
+mockall = { workspace = true }
+
+[dev-dependencies]
+assertables = { workspace = true }

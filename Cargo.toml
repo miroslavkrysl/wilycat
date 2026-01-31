@@ -4,6 +4,7 @@ members = [
     "crates/core",
     "crates/db-turso",
     "crates/app-linux",
+    "crates/playground",
 ]
 
 [workspace.package]
@@ -24,4 +25,7 @@ time = "0.3.45"
 thiserror = "2.0.17"
 anyhow = "1.0.100"
 async-trait = "0.1.89"
+futures = "0.3.31"
 mockall = "0.14.0"
+tokio = "1.49.0"
+assertables = "9.8.4"
