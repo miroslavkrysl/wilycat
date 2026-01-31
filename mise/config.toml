@@ -1,5 +1,6 @@
 [tools]
 "cargo:cargo-binstall" = "latest"
+"cargo:cargo-expand" = "latest"
 "cargo:cargo-workspaces" = "latest"
 "cargo:https://github.com/dcchut/cargo-derivefmt" = "latest"
 rust = "latest"
