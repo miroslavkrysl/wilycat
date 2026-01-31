@@ -1,5 +1,5 @@
 [package]
-name = "linux-app"
+name = "app-linux"
 authors.workspace = true
 description.workspace = true
 edition.workspace = true
