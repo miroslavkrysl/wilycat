@@ -9,13 +9,14 @@ rust-version.workspace = true
 version.workspace = true
 
 [dependencies]
-async-trait = { workspace = true }
-futures = { workspace = true, features = [] }
-time = { workspace = true, features = ["serde"] }
-uuid = { workspace = true, features = ["v7", "serde"] }
+downcast-rs = {workspace = true}
 thiserror = { workspace = true }
 anyhow = { workspace = true }
+async-trait = { workspace = true }
+futures = { workspace = true, features = [] }
 serde = { workspace = true, features = ["derive"] }
+time = { workspace = true, features = ["serde"] }
+uuid = { workspace = true, features = ["v7", "serde"] }
 tokio = { workspace = true, features = ["rt", "macros"] }
 mockall = { workspace = true }
 

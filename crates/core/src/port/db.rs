@@ -1,6 +1,7 @@
 //! The `TransactionError` enum represents a set of errors that can occur while managing database transactions.
 
 use async_trait::async_trait;
+use downcast_rs::{impl_downcast, DowncastSync};
 use mockall::automock;
 use std::fmt::Display;
 use thiserror::Error;
@@ -26,13 +27,15 @@ pub trait Connection: Send {
 
 #[automock]
 #[async_trait]
-pub trait Transaction: Send {
+pub trait Transaction: Send + DowncastSync {
     /// Commit the transaction.
     async fn commit(self: Box<Self>) -> Result<(), anyhow::Error>;
 
     /// Roll back the transaction.
     async fn roll_back(self: Box<Self>) -> Result<(), anyhow::Error>;
 }
+
+impl_downcast!(sync Transaction);
 
 /// Helper function to run an operation within a transaction.
 pub async fn run_in_transaction<F, R, E>(
@@ -89,9 +92,6 @@ pub enum RepositoryError {
 
     #[error("Database error: {0}")]
     Database(#[source] anyhow::Error),
-
-    #[error("Invalid transaction type: {0}")]
-    InvalidTransaction(#[source] anyhow::Error),
 }
 
 #[cfg(test)]
