@@ -55,15 +55,13 @@ This enables a decent level of complexity, modularity and testability.
 - Rust language for everything possible
 - Dioxus for UI ([https://dioxuslabs.com](https://dioxuslabs.com))
 - Iroh for P2P networking ([https://www.iroh.computer](https://www.iroh.computer))
-- Automerge ([https://automerge.org/](https://automerge.org/)) for [CFRD structures](https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type)
-- ~~redb ([https://github.com/cberner/redb](https://github.com/cberner/redb))~~ or Turso ([https://github.com/tursodatabase/turso](https://github.com/tursodatabase/turso)) for local data storage
-  - redb is robust, but maybe too simple, lacking a lot of features by design
-  - Turso is an ambitious project with a ton of features trying to replace SQLite, but it does not feel to be production-ready at this time. But...
-    - It is good enough to be used in this project.
-    - Supports encryption at rest.
-    - Supports indexing and fulltext search by [using Tantivy](https://github.com/tursodatabase/turso/blob/main/docs/fts.md) internally.
-- ~~Tantivy ([https://github.com/quickwit-oss/tantivy](https://github.com/quickwit-oss/tantivy)) or SeekStorm ([https://seekstorm.com](https://seekstorm.com))~~ for indexing and search
-  - Decided not to use extra technology for indexing and search, since this is already [supported by Turso](https://github.com/tursodatabase/turso/blob/main/docs/manual.md#create-index--define-a-new-index)
+- Automerge for [CFRD structures](https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type) ([https://automerge.org/](https://automerge.org/))
+- Turso for local data storage, indexing and searching ([https://github.com/tursodatabase/turso](https://github.com/tursodatabase/turso)) 
+    - Encryption at rest
+    - Indexing, searching, fulltext searching by [using Tantivy](https://github.com/tursodatabase/turso/blob/main/docs/fts.md) internally
+
+- age for file + network messages encryption ([https://github.com/C2SP/C2SP/blob/main/age.md](https://github.com/C2SP/C2SP/blob/main/age.md), [https://github.com/str4d/rage](https://github.com/str4d/rage))
+
 ## Project Roadmap
 
 This roadmap outlines the planned and completed features for **wilycat** life organizer.
