@@ -9,3 +9,10 @@ rust-version.workspace = true
 version.workspace = true
 
 [dependencies]
+core = { workspace = true }
+
+turso = { workspace = true }
+indoc = { workspace = true }
+
+[dev-dependencies]
+tempfile = { workspace = true }

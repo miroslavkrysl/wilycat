@@ -4,7 +4,6 @@ members = [
     "crates/core",
     "crates/db-turso",
     "crates/app-linux",
-    "crates/playground",
 ]
 
 [workspace.package]
@@ -13,20 +12,21 @@ description = "Message-oriented life organizer"
 edition = "2024"
 license = "AGPL-3"
 repository = "https://github.com/miroslavkrysl/wilycat"
-rust-version = "1.91.0"
+rust-version = "1.95.0"
 version = "0.1.0"
 
 [workspace.dependencies]
 core = { path = "crates/core" }
 
-uuid = "1.19.0"
+uuid = "1.20.0"
 serde = "1.0.228"
-time = "0.3.45"
-thiserror = "2.0.17"
-anyhow = "1.0.100"
+time = "0.3.47"
 async-trait = "0.1.89"
 futures = "0.3.31"
-mockall = "0.14.0"
+unimock = "0.6.8"
 tokio = "1.49.0"
 assertables = "9.8.4"
-downcast-rs = "2.0.2"
+indoc = "2.0.7"
+turso = "0.5.0-pre.8"
+tempfile = "3.25.0"
+snafu = "0.8.9"
